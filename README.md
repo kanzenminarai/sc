@@ -1,4 +1,4 @@
-# Turing Complete Scientific Calculator (Work in progrss)
+# Turing Complete Scientific Calculator (Work in progress)
 
 ### Description
 tscs is a open source software that calculates racional numbers, and show the result of the given expression
