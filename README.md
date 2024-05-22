@@ -1,50 +1,56 @@
-# Turing Complete Scientific Calculator (Work in progress)
+# Scientific Calculator
+
+>[!WARNING]
+> This project is not stable and can change anytime.
 
 ### Description
-tscs is a open source software that calculates racional numbers, and show the result of the given expression
+**sc** is a open source software that calculates integer numbers using the postfix notation and show the result of 
+a expression.
 
 ### Dependencies
-```bash
-# apt
-sudo apt install git gcc bash
-
-# pacman
-sudo pacman -S install git gcc bash
-```
+The only dependencies and its respective versions or higher needed are:
+* **git** (2.45.1)
+* **clang** (18.1.1)
+* **xmake** (2.9.1)
 
 ### Install
 ```bash
-# clone the repository
-git clone --verbose https://github.com/KanzenMinarai/tcsc
+# Clone the repository
+git clone --verbose https://github.com/kanzenminarai/sc
 
-# changing the directory
-cd tcsc/
+# Changing to the software directory
+cd sc/
 
-# adding the permission to the user to execute the file
-chmod +x setup.sh
+# Compile
+xmake build
 
-# executing the installation
-./setup.sh install
+# Install
+xmake install # In case of admin request use "xmake install --admin"
 ```
+
 ### Usage
+Here are some usage examples below in command line.
 ```bash
-# for now this is how to insert a expression
-./tscs [expression]
+# Execute
+sc
 
-# addition
-./tscs 1+1
+# Single operator
+1 1 +
 
-# subtraction
-./tscs 2-1
-
-# multiplication
-./tscs 2*2
-
-# division
-./tscs 4/2
+# Multiple operators
+23 19 + 99 22 - 2 * 32 / 2 ^
 ```
 
 ### Uninstall
 ```bash
-./setup.sh uninstall
+xmake uninstall # In case of admin request use "xmake uninstall --admin"
 ```
+
+### License
+This project is under the [Zero Clause BSD License](./LICENSE).
+
+### To do
+* add a infix evaluator support
+* add command line evaluation support
+* add a gui support
+* add a MacOS and BSD support
