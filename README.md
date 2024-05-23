@@ -38,7 +38,7 @@ sc
 1 1 +
 
 # Multiple operators
-23 19 + 99 22 - 2 * 32 / 2 ^
+42 19 + 32 * 5 - 37 +
 ```
 
 ### Uninstall
